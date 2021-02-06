@@ -1,6 +1,14 @@
 // complete the function
 function palindrom(str) {
   // code goes here
+  function palindrome(str) {
+    var lowerCaseString = str.toLowerCase().replace(/[^A-Za-z0–9]/g, '');
+    var reverseString = lowerCaseString.split('').reverse().join('');
+    return reverseString === lowerCaseString;
+  }
+
+  const result = palindrome("racecar");
+  console.log(result);
 }
 
 function solution(arg) {
